@@ -23,7 +23,7 @@ sepal_width = form.number_input(
 
 	"sepal_width (cm)",
 	min_value=1.0,
-	max_value=4.5,
+	max_value=7.5,
 	value=5.1
 	)
 
@@ -57,4 +57,5 @@ if submit_button:
 
 	prediction = model.predict(input_data)
 	st.subheader('Prediction Result')
+
 	st.success(f" Predicted species: {prediction[0]}")
